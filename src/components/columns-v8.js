@@ -3,42 +3,42 @@ import ColumnFilter from "./column-filter";
 
 export const COLUMNS = [
   {
-    Header: "Id",
+    header: "Id",
     accessor: "id",
     disableFilters: true,
   },
   {
-    Header: "Name",
+    header: "Name",
     accessor: "name",
   },
   {
-    Header: "Category",
+    header: "Category",
     accessor: "category",
   },
   {
-    Header: "Subcategory",
+    header: "Subcategory",
     accessor: "subcategory",
   },
   {
-    Header: "Created At",
+    header: "Created At",
     accessor: "createdAt",
-    Cell: ({ value }) => {
+    cell: ({ value }) => {
       return format(new Date(value), "dd/MM/yyyy");
     },
   },
   {
-    Header: "Updated At",
+    header: "Updated At",
     accessor: "updatedAt",
-    Cell: ({ value }) => {
+    cell: ({ value }) => {
       return format(new Date(value), "dd/MM/yyyy");
     },
   },
   {
-    Header: "Price",
+    header: "Price",
     accessor: "price",
   },
   {
-    Header: "Sale Price",
+    header: "Sale Price",
     accessor: "sale_price",
   },
 ];
